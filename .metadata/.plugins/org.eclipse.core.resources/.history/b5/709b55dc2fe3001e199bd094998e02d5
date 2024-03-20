@@ -1,0 +1,9 @@
+package review;
+
+public class 형변환 {
+	public static void main(String[] args) {
+		
+		integer store =100;
+		String s
+	}
+}
