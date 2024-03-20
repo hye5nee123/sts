@@ -18,18 +18,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EmpVO {
-	Integer employeeId;
+	int employeeId;
 	String firstName;
 	String lastName;
 	String email;
-	String phoneNumber;
-	@DateTimeFormat(pattern = "yyyy-MM-dd")	// 입력 String => Date
-	@JsonFormat(pattern = "yyyy-MM-dd")		// 출력 Date => String
+	@DateTimeFormat(pattern = "yyyy-MM-dd hh:mm")   //입력 string -> Date
+	@JsonFormat(pattern = "yyyy-MM-dd")             //출력 Date -> string      
 	Date hireDate;
 	Integer salary;
 	String jobId;
-	Integer commissionPct;
-	@JsonProperty(value = "deptId")String departmentId;
+	@JsonProperty(value = "deptId") String departmentId;
 	@JsonIgnore String managerId;
 	@JsonIgnore String phone;
 }

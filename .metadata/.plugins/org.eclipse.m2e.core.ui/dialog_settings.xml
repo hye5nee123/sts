@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\admin\git\sts\demo\src\main\java\com\example\demo\users\UsersVO.java"/>
 			<item value="D:\sts\workspace\java_exercise"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -30,17 +31,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.yedam.app"/>
-			<item value="review.review"/>
-			<item value="review"/>
 		</list>
 		<list key="groupId">
-			<item value="com.yedam"/>
-			<item value="review"/>
 		</list>
 		<list key="artifactId">
-			<item value="app"/>
-			<item value="review"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

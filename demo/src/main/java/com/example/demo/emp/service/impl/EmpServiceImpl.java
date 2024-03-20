@@ -12,20 +12,14 @@ import com.example.demo.emp.SearchVO;
 import com.example.demo.emp.mapper.EmpMapper;
 import com.example.demo.emp.service.EmpService;
 
-import lombok.Setter;
-
 @Service
 public class EmpServiceImpl implements EmpService {
-	
-	@Setter(onMethod_ = @Autowired)		// @Autowired
-	EmpMapper empMapper;
+	@Autowired	EmpMapper empMapper;
 	
 	@Override
-	public Map<String, Object> getEmpList(EmpVO vo, SearchVO svo) {
-		
-		Map<String, Object> map = new HashMap<String, Object>();
-		
-		// 리스트 & 전체 건수
+	public Map<String,Object>  getEmpList(EmpVO vo, SearchVO svo) {
+		Map<String,Object> map = new HashMap<String,Object>();
+		//리스트와 전체건수
 		map.put("data", empMapper.getEmpList(vo, svo));
 		map.put("count", empMapper.getCount(vo, svo));
 		
@@ -38,8 +32,8 @@ public class EmpServiceImpl implements EmpService {
 	}
 
 	@Override
-	public int insertEmp(EmpVO vo) {
-		return empMapper.insertEmp(vo);
+	public int insertEmp(EmpVO empVO) {
+		return empMapper.insertEmp(empVO);
 	}
 
 	@Override

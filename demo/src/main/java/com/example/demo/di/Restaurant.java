@@ -9,9 +9,7 @@ import lombok.RequiredArgsConstructor;
 @Component
 @Data
 @RequiredArgsConstructor
-@Scope("prototype")	// scope 종류 : singleton(default), prototype, request, session
+@Scope("prototype")  //singletone, prototype, request, session
 public class Restaurant {
-
 	final private Chef chef;
-
 }

@@ -6,5 +6,5 @@ import lombok.Data;
 
 @Data
 public class ListCodeVO {
-	List<CodeVO> list;
+	private List<CodeVO> list;
 }

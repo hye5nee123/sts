@@ -13,14 +13,12 @@ import lombok.extern.log4j.Log4j2;
 
 @Service
 @Log4j2
-public class SampleServiceImpl implements SampleService{
-	
-	@Setter(onMethod_ = @Autowired)
+public class SampleServiceImpl  implements SampleService{
+	@Setter(onMethod_ = @Autowired ) 
 	Sample1Mapper mapper1;
+	@Setter(onMethod_ = @Autowired ) 
+	Sample2Mapper  mapper2;
 	
-	@Setter(onMethod_ = @Autowired)
-	Sample2Mapper mapper2;
-
 	@Override
 	@Transactional
 	public void addData(String value) {
@@ -29,8 +27,11 @@ public class SampleServiceImpl implements SampleService{
 		
 		log.info("mapper2......");
 		mapper2.insertCol2(value);
-
+		
 		log.info("end......");
 	}
+	
+	
+	
 	
 }

@@ -12,11 +12,12 @@ import com.example.demo.emp.SearchVO;
 
 @Mapper
 public interface EmpMapper {
-	List<EmpVO> getEmpList(@Param("vo") EmpVO vo, SearchVO svo);
+	List<EmpVO> getEmpList(EmpVO vo, SearchVO svo);
 	EmpVO getEmpInfo(int employeeId);
-	int insertEmp(EmpVO vo);
+	int insertEmp(EmpVO empVO);
 	int deleteEmp(int employeeId);
-	List<Map<String, Object>> getStat();
-	// @Select("SELECT COUNT(*) FROM employees")	// mapper.xml 없이 바로 쿼리 가져옴
+	List<Map<String,Object>> getStat();
+	
+	//@Select("select count(*) from employees")
 	public long getCount(EmpVO vo, SearchVO svo);
 }
