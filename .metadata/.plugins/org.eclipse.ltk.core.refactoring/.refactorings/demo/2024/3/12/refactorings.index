@@ -1,1 +1,15 @@
 1710833260453	Move file
+1710896115208	Delete element
+1710896117760	Delete element
+1710896571364	Move file
+1710896577340	Rename resource 'req1.html'
+1710902323438	Rename package 'com.example.demo.users.mapper'
+1710902340673	Rename package 'com.example.demo.users.mapper'
+1710902421287	Move file
+1710902433178	Rename resource 'emp-mapper.xml'
+1710902464821	Delete element
+1710902471345	Rename package 'com.example.demo.users.mapper'
+1710902643329	Move compilation unit
+1710902731255	Move file
+1710902743366	Rename resource 'users-mapper.xml'
+1710902748091	Rename resource 'UserMapper.xml'
