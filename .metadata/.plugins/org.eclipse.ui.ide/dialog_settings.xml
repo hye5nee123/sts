@@ -116,8 +116,11 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="\\192.168.0.30\학생공유\13_스프링\고.zip"/>
 			<item value="C:\Users\admin\Desktop\고.zip"/>
+			<item value="C:\Users\admin\Desktop\DD.zip"/>
+			<item value="C:\Users\admin\Desktop\springTemp.zip"/>
+			<item value="D:\sts\springtemplate.zip"/>
+			<item value="\\192.168.0.30\학생공유\13_스프링\고.zip"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

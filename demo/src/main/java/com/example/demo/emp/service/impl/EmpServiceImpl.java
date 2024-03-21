@@ -14,7 +14,9 @@ import com.example.demo.emp.service.EmpService;
 
 @Service
 public class EmpServiceImpl implements EmpService {
+	
 	@Autowired	EmpMapper empMapper;
+	
 	
 	@Override
 	public Map<String,Object>  getEmpList(EmpVO vo, SearchVO svo) {
