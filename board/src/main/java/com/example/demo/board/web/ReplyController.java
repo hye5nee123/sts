@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.board.ReplyVO;
 import com.example.demo.board.SearchVO;
 import com.example.demo.board.mapper.ReplyMapper;
 import com.example.demo.common.Paging;
+import com.example.demo.reply.ReplyVO;
 
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;

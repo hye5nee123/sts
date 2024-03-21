@@ -2,6 +2,7 @@ package com.example.demo.board.web;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,19 +16,19 @@ import com.example.demo.board.mapper.BoardMapper;
 
 @Controller
 public class BoardController {
-	@Autowired BoardMapper dao;
+	@Autowired BoardMapper boardMapper;
 	
 	// ajax 목록 조회
 	@RequestMapping("/ajaxBoard")
 	@ResponseBody
 	public List<BoardVO> ajaxBoard(BoardVO vo, SearchVO svo) {
-		return dao.getBoardList(vo, svo);
+		return boardMapper.getBoardList(vo, svo);
 	}
 	
 	// 목록 조회
-	@RequestMapping("/board/boardList")
+	@RequestMapping("/boardList")
 	public String boardList(Model model, BoardVO vo, SearchVO svo) {
-		model.addAttribute("boardList", dao.getBoardList(vo, svo));
+		model.addAttribute("boardList", boardMapper.getBoardList(vo, svo));
 		return "board/boardList";
 	}
 }
