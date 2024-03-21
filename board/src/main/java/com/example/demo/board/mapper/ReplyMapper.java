@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.demo.board.ReplyVO;
 import com.example.demo.board.SearchVO;
+import com.example.demo.reply.ReplyVO;
 
 @Mapper
 public interface ReplyMapper {
