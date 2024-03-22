@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.example.demo.board.mapper.BoardMapper;
+import com.sam.app.board.mapper.BoardMapper;
 
 @SpringBootTest
 public class BoardMapperTest {

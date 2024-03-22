@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.board.SearchVO;
-import com.example.demo.board.mapper.ReplyMapper;
 import com.example.demo.common.Paging;
 import com.example.demo.reply.ReplyVO;
+import com.sam.app.board.mapper.ReplyMapper;
 
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
