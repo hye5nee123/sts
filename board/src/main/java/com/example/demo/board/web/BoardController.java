@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.board.BoardVO;
 import com.example.demo.board.SearchVO;
-import com.example.demo.board.mapper.BoardMapper;
+import com.sam.app.board.mapper.BoardMapper;
 
 @Controller
 public class BoardController {

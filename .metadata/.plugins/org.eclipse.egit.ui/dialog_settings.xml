@@ -35,14 +35,20 @@
 		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
-		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="true"/>
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="sortItemState" value="false"/>
 	</section>
 	<section name="GitCommitMessageComponent">
 		<list key="D:\sts\workspace\.git">
-			<item value="empty"/>
+			<item value="false"/>
+			<item value="혜원 &lt;152113818+hey5nee123@users.noreply.github.com&gt;"/>
+			<item value="dd"/>
+			<item value="혜원 &lt;152113818+hey5nee123@users.noreply.github.com&gt;"/>
+			<item value="a9d3c0cc4e87141c0dd940327b168f6ef081edd6"/>
+			<item value="0"/>
+			<item value="false"/>
 		</list>
 		<list key="C:\Users\admin\git\Spring-master\.git">
 			<item value="empty"/>
