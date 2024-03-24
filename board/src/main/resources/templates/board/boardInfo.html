@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>글정보</h3>
+	<form method="post" name="frm">	
+	<div>
+		<span>No</span>
+		<input th:value="${board.boardNo}" name="boardNo" readonly>
+	</div>
+	<div>
+		<span>제목</span>
+		<input th:value="${board.title}" name="title">
+	</div>
+	<div>
+		<span>내용</span>
+		<input th:value="${board.content}" name="content">
+	</div>
+	<div>
+		<span>작성자</span>
+		<input th:value="${board.writer}" name="writer">
+	</div>
+	<div>
+		<span>등록일자</span>
+		<input th:value="${#dates.format(board.writeDate,'yyyy/MM/dd')}" name="writeDate" readonly>
+	</div>
+	<div>
+		<span>이미지</span>
+		<input th:value="${board.image}" name="image">
+	</div>
+	<div>
+		<span>조회수</span>
+		<input th:value="${board.clickCnt}" name="clickCnt" readonly>
+	</div>
+	<div>
+		<button type="button" id="listBtn">글목록</button>
+	</div>
+	</form>
+	<script>
+	</script>
+</body>
+</html>

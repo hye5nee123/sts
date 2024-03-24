@@ -4,6 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <title>boardList.html</title>
+<script th:inline="javascript">
+function move(boardNo){
+	location.href='/board/boardInfo/'+ boardNo
+}	
+</script>
 </head>
 <body>
 	<h1>게시글 목록</h1>
@@ -17,18 +22,30 @@
 					<th>write_date</th>
 					<th>click_cnt</th>
 				</tr>
-			</thead>
 			<tbody>
-				<tr th:each="board, stat: ${boardList}">
+				<tr>
+					<button type="button" id="insertBtn">등록</button>
+				</tr>
+				<tr th:each="board, stat: ${boardList}" th:onclick="move([[${board.boardNo}]])">
 					<td th:text="${stat.count}"></td>
 					<td th:text="${board.title}"></td>
 					<td th:text="${board.writer}"></td>
 					<td th:text="${board.writeDate}"></td>
 					<td th:text="${board.clickCnt}"></td>
+					<td>
+						<a th:href="@{/board/delete/{boardNo}(boardNo=${board.boardNo})}">삭제</a>
+					</td>
 				</tr>
 			</tbody>
+
 		</table>
-		
+
 	</div>
+	<script>
+	insertBtn.addEventListener("click", e=>{
+		location.href='/board/insertForm'
+	})
+		
+	</script>
 </body>
 </html>
